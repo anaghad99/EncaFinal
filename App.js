@@ -416,7 +416,7 @@ const [selectedOption, setSelectedOption] = React.useState(null);
 function TakeImage() {
   return (
     <View style={styles.container}>
-    <Text>Total sucko</Text>
+    <Text>Click For Camera</Text>
     </View>
   );
 }
@@ -673,7 +673,8 @@ function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Feed"
-      activeColor="#e91e63"
+      activeColor="#000080"
+      inactiveColor = '000080'
       labelStyle={{ fontSize: 12 }}
       style={{ backgroundColor: 'tomato' }}
     >
@@ -682,6 +683,7 @@ function MyTabs() {
         component={Home}
         options={{
           tabBarLabel: 'Home',
+          tabBarColor: '#F2D6F6',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={20} />
           ),
@@ -692,6 +694,7 @@ function MyTabs() {
         component={Recommendations}
         options={{
           tabBarLabel: 'Reccos',
+          tabBarColor: '#F2D6F6',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="folder" color={color} size={20} />
           ),
@@ -702,6 +705,7 @@ function MyTabs() {
         component={TakeImage}
         options={{
           tabBarLabel: 'Take Image',
+          tabBarColor: '#F2D6F6',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name='camera' color={color} size={20} />
           ),
@@ -712,6 +716,7 @@ function MyTabs() {
         component={Profile}
         options={{
           tabBarLabel: 'Profile',
+          tabBarColor: '#F2D6F6',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="account" color={color} size={20} />
           ),
@@ -722,6 +727,7 @@ function MyTabs() {
       component={WellnessQuestion}
       options={{
         tabBarLabel: 'Well Check',
+        tabBarColor: '#F2D6F6',
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name='check' color={color} size={20} />
         ),
@@ -732,6 +738,7 @@ function MyTabs() {
       component={SkinLog}
       options={{
         tabBarLabel: 'Skin Log',
+        tabBarColor: '#F2D6F6',
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name='notebook' color={color} size={20} />
         ),
@@ -935,3 +942,4 @@ const styles = StyleSheet.create({
     height: 150
   }
 });
+
